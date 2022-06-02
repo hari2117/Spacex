@@ -1,0 +1,11 @@
+
+.btnfilter{
+    position: absolute;
+background-color:transparent;
+padding: 10px;
+z-index: 1;
+
+}
+.btnfilter:hover{
+    background-color:#ff6b81;
+}
