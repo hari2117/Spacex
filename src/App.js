@@ -12,6 +12,7 @@ import Hoc from "./Hoc/Hocgetdata";
 import Hocgetone from "./Hoc/Hocgetonedetails";
 import ProgressBar from "./ProgressBar";
 import Launchdetail from "./Launchdetail";
+import Notfound from "./Notfound"
 let url;
 const Rocket = Hoc(Rockets, (url = "https://api.spacexdata.com/v3/rockets"));
 const Launchs = Hoc(
@@ -43,6 +44,7 @@ function App() {
         <Route path="/launch/:id" element={<Launchdetails />}></Route>
         <Route path="/history" element={<History />}></Route>
         <Route path="/history/:id" element={<Historyget />}></Route>
+        <Route path="*" element={<Notfound/}></Route>
       </Routes>
     </div>
   );
