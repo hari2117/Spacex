@@ -44,7 +44,7 @@ function App() {
         <Route path="/launch/:id" element={<Launchdetails />}></Route>
         <Route path="/history" element={<History />}></Route>
         <Route path="/history/:id" element={<Historyget />}></Route>
-        <Route path="*" element={<Notfound/}></Route>
+        <Route path="*" element={<Notfound/>}></Route>
       </Routes>
     </div>
   );
